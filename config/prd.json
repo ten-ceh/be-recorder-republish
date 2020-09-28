@@ -1,0 +1,8 @@
+{
+    "bunnyBus": {
+        "hostname": "orange-bonobo.rmq.cloudamqp.com",
+        "username": "degxfjxy",
+        "password": "ar6jDct1vP7cTOvquYiG9zqudczxRuFP",
+        "vhost": "4/too"
+    }
+}

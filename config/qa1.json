@@ -1,0 +1,8 @@
+{
+    "bunnyBus": {
+        "hostname": "burly-kangaroo.rmq.cloudamqp.com",
+        "username": "kpdozhdb",
+        "password": "UH0Vf-vUWkQKbp1gMu5dF_C3DhsQ05aC",
+        "vhost": "4/too"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "bunnyBus": {
+        "hostname": "cyan-gibbon.rmq.cloudamqp.com",
+        "username": "zulrrpke",
+        "password": "lDnW822qr2uRnXIIYglBkICp-hFCTvkE",
+        "vhost": "4/too"
+    }
+}
