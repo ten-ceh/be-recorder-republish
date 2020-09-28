@@ -23,17 +23,20 @@ class Republish {
         }
     }
 
-    async publish({ message, metaData }) {
+    async publish({ message: original, metaData }) {
         try {
             // clean payload
-            const { data } = message;
+            const { data } = original;
             const values = {};
             for (const value of data) {
                 Object.assign(values, { [data.id]: value });
             }
 
             // re publish
-            Object.assign(message, { data: Object.values(values) });
+            const message = {
+                ...original,
+                data: Object.values(values)
+            };
             await this.bunnyBus.publish({
                 message,
                 options: {
@@ -42,9 +45,9 @@ class Republish {
                 }
             });
 
-            this.logger.info({ message: 'Published', data: { message, metaData } });
+            this.logger.info({ message: 'Published', data: { original, message, metaData } });
         } catch (error) {
-            this.logger.error({ error, message, metaData });
+            this.logger.error({ error, message: original, metaData });
         }
     }
 
