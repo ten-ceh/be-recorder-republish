@@ -1,0 +1,16 @@
+# Visual Code
+.vscode
+
+# Node / NPM
+node_modules
+*.log
+
+# tests
+coverage/
+.nyc_output/
+coverage.html
+
+# package files
+*.tgz
+# test coverage
+coverage.html

@@ -1,0 +1,10 @@
+test/
+docker/
+coverage/
+coverage.html
+
+# hidden files folders
+.*
+.*/
+
+*.tgz

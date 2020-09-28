@@ -1,0 +1,22 @@
+{
+    "bunnyBus": {
+        "hostname": "127.0.0.1",
+        "port": 5672,
+        "username": "guest",
+        "password": "guest",
+        "prefetch": 1,
+        "dispatchType": "concurrent",
+        "globalExchange": "domain-events"
+    },
+    "queues": {
+        "errorQueue": "be_recorder_reject_events",
+        "eventType": "asset_site_utilization",
+        "namespace": "site_utilization",
+        "filename": "errors"
+    },
+    "papertrail": {
+        "appname": "site-utilization-republish",
+        "host": "logs5.papertrailapp.com",
+        "port": 44075
+    }
+}
